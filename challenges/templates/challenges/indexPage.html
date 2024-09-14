@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header_reference %}
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body">
+            <div class="container-fluid" style="background: gainsboro; direction: rtl">
+                <button
+                        data-mdb-collapse-init
+                        class="navbar-toggler"
+                        type="button"
+                        data-mdb-target="#navbarExample01"
+                        aria-controls="navbarExample01"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                >
+                    <i class="fas fa-bars"></i>
+                </button>
+                <img src="../../static/challenges/images/download.png" height="50" width="50">
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="http://localhost:8000">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8000/register/">ورود/ثبت نام</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">درباره ما</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Jumbotron -->
+        <div class="p-5 text-center"
+             style=" background-image: url('https://img.freepik.com/premium-photo/sky-different-weather-collage-banner-design-meteorology-forecast-climate-change_144356-46434.jpg?w=1380')">
+            <h1 class="mb-3">آب و هوا</h1>
+            <h5 class="mb-3">صفحه اصلی سایت</h5>
+            <a data-mdb-ripple-init class="btn btn-primary" href="http://localhost:8000/register/" role="button">ورود/ثبت نام</a>
+        </div>
+        <!-- Jumbotron -->
+    </header>
+{% endblock %}
+{% block content %}
+    <div class="sample-section-wrap">
+        <div class="sample-section"
+             style="position: relative; max-width: 640px; margin-right: auto; margin-left: auto; padding: 40px">
+            <h1 style="text-align: right" dir="rtl">به سایت آب و هوا شناسی خوش آمدید</h1>
+            <p style="text-align: right; font-size: 20px" dir="rtl">به وب‌سایت جامع آب و هوا شناسی خوش آمدید! ما اینجا
+                هستیم تا شما را با آخرین اطلاعات و پیش‌بینی‌های هواشناسی در سراسر کشور آگاه کنیم. با استفاده از
+                تکنولوژی‌های پیشرفته و داده‌های دقیق، ما به شما کمک می‌کنیم تا در هر لحظه از وضعیت آب و هوای محل زندگی
+                خود باخبر باشید.</p>
+            <h1 style="text-align: right" dir="rtl">خدمات ما</h1>
+            <p style="text-align: right; font-size: 20px" dir="rtl">
+            <div style="text-align: right; font-size: 20px" dir="rtl">
+                <b>پیش‌بینی‌های دقیق آب و هوا:</b> دسترسی به پیش‌بینی‌های کوتاه‌مدت و بلندمدت برای شهرها و مناطق مختلف.
+            </div>
+
+            <div style="text-align: right; font-size: 20px" dir="rtl">
+                <b>نقشه‌های زنده:</b>مشاهده نقشه‌های زنده هواشناسی شامل بارش، دما، باد و سایر شرایط جوی.
+            </div>
+            <div style="text-align: right; font-size: 20px" dir="rtl">
+                <b>اطلاعیه‌های هشدار:</b>دریافت اطلاعیه‌های هشدار برای شرایط جوی خطرناک نظیر طوفان، باران شدید و ...
+            </div>
+            <div style="text-align: right; font-size: 20px" dir="rtl">
+                <b>تحلیل‌های هواشناسی:</b> تحلیل‌ها و گزارش‌های تخصصی از تیم هواشناسان ما.
+            </div>
+            </p>
+            <h3 style="text-align: right" dir="rtl"> برای ورود و مشاهده آب و هوا بر روی <a
+                    href="http://localhost:8000/login/">اینجا</a> کلیک کنید</h3>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../static/challenges/js/apiProject.js"></script>
+{% endblock %}
+
+{% block footer_reference %}
+    <section class="">
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #0a4275;">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: CTA -->
+                <section class="">
+                    <p class="d-flex justify-content-center align-items-center">
+                       <a data-mdb-ripple-init class="btn btn-primary" href="http://localhost:8000/register/" role="button">ثبت نام</a>
+                        <span class="me-3"> : ثبت نام کنید </span>
+                    </p>
+                </section>
+                <!-- Section: CTA -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+{% endblock %}
